@@ -1,8 +1,11 @@
 # Base64-Client-Server-socketPro
+
 Application #5: Base64 encoding system using Client-Server socket programming
+
 In this assignment, you require to implement two C programs, namely server and client to
 communicate with each other based on TCP sockets. The aim is to implement simple Base64
 encoding communication protocol.
+
 Initially, server will be waiting for a TCP connection from the client. Then, client will connect to
 the server using server’s TCP port already known to the client. After successful connection, the
 client accepts the text input from the user and encodes the input using Base64 encoding system.
@@ -12,6 +15,7 @@ decoding the received message, and sends an ACK to the client. The client and se
 remain in a loop to communicate any number of messages. Once the client wants to close the
 communication, it should send a Message (Type 2 Message) to the server and the TCP connection
 on both the server and client should be closed gracefully by releasing the socket resource.
+
 The messages used to communicate contain the following fields:
 Message_
 Messag
@@ -29,7 +33,10 @@ Prototypes for Client and Server
 Client :<executable code><Server IP Address><Server Port number>
 Server :<executable code><Server Port number>
 *Please make necessary and valid assumptions whenever required.
+
+
 Base64 Encoding System Description:
+
 Base64 encoding is used for sending a binary message over the net. In this scheme, groups of 24bit
 are broken into four 6 bit groups and each group is encoded with an ASCII character. For binary
 values 0 to 25 ASCII character ‘A’ to ‘Z’ are used followed by lower case letters and the digits for
