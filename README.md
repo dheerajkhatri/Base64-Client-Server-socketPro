@@ -9,13 +9,18 @@
 * Once Client wants to close communication,it sends msg to server and the TCP connections on both closed gracefully by releasing socket resources.
 
 
-How to run the Program:-
+### How to run the Program:- ###
 * Start the server it will take one command line argument as port number on which it will work
 * Start the client with 2 command line arguments first is server ip address and second is server port
+* You can run both client and server on same computer as they 
 
-ie: sudo ./server 5000
-client1 : sudo ./client 127.0.0.1 5000
-client2 : sudo ./client 127.0.0.1 5000
+Example:</br>
+server  : sudo ./server 5000</br>
+client1 : sudo ./client 127.0.0.1 5000</br>
+client2 : sudo ./client 127.0.0.1 5000</br>
 
-Client:- <executable code><Server IP address><Server Port Number>
-Server:- <executable code><Server Port Number>
+Client:- executableCode ServerIP ServerPort</br>
+Server:- executableCode ServerPort</br>
+
+### Further Reading and References ###
+* http://www.cs.dartmouth.edu/~campbell/cs50/socketprogramming.html
